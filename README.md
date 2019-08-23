@@ -1,7 +1,7 @@
 # ReactStuff
 Some stuff in React
 
-Refer to the state object in the render() method:
+## Refer to the state object in the render() method:
 ```
 class Car extends React.Component {
   constructor(props) {
