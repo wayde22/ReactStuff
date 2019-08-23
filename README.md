@@ -1,7 +1,7 @@
 # ReactStuff
 Some stuff in React
 
-## Refer to the state object in the render() method:
+### Refer to the state object in the render() method:
 ```
 class Car extends React.Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class Car extends React.Component {
 }
 ```
 
-Add a button with an onClick event that will change the color property:
+### Add a button with an onClick event that will change the color property:
 ```
 class Car extends React.Component {
   constructor(props) {
@@ -62,7 +62,7 @@ class Car extends React.Component {
 }
 ```
 
-Send the "brand" property from the Garage component to the Car component:
+### Send the "brand" property from the Garage component to the Car component:
 ```
 class Car extends React.Component {
   render() {
@@ -84,7 +84,7 @@ class Garage extends React.Component {
 ReactDOM.render(<Garage />, document.getElementById('root'));
 ```
 
-Create a variable named "carname" and send it to the Car component:
+### Create a variable named "carname" and send it to the Car component:
 ```
 class Car extends React.Component {
   render() {
@@ -107,18 +107,18 @@ class Garage extends React.Component {
 ReactDOM.render(<Garage />, document.getElementById('root'));
 ```
 
-React events are written in camelCase syntax:
+### React events are written in camelCase syntax:
 
-onClick instead of onclick.
+### onClick instead of onclick.
 
-React event handlers are written inside curly braces:
+### React event handlers are written inside curly braces:
 
-onClick={shoot}  instead of onClick="shoot()".
+### onClick={shoot}  instead of onClick="shoot()".
 ```
 <button onClick={shoot}>Take the Shot!</button>
 ```
 
-Put the shoot function inside the Football component:
+### Put the shoot function inside the Football component:
 ```
 class Football extends React.Component {
   shoot() {
@@ -134,7 +134,7 @@ class Football extends React.Component {
 ReactDOM.render(<Football />, document.getElementById('root'));
 ```
 
-Send "Goal" as a parameter to the shoot function, using arrow function:
+### Send "Goal" as a parameter to the shoot function, using arrow function:
 ```
 class Football extends React.Component {
   shoot = (a) => {
@@ -150,7 +150,7 @@ class Football extends React.Component {
 ReactDOM.render(<Football />, document.getElementById('root'));
 ```
 
-Arrow Function: Sending the event object manually:
+### Arrow Function: Sending the event object manually:
 ```
 class Football extends React.Component {
   shoot = (a, b) => {
@@ -170,7 +170,7 @@ class Football extends React.Component {
 ReactDOM.render(<Football />, document.getElementById('root'));
 ```
 
-Insert an object with the styling information:
+### Insert an object with the styling information:
 ```
 class MyHeader extends React.Component {
   render() {
@@ -183,7 +183,7 @@ class MyHeader extends React.Component {
   }
 }
 ```
-Use backgroundColor instead of background-color:
+### Use backgroundColor instead of background-color:
 ```
 class MyHeader extends React.Component {
   render() {
@@ -197,7 +197,7 @@ class MyHeader extends React.Component {
 }
 ```
 
-Create a style object named mystyle:
+### Create a style object named mystyle:
 ```
 class MyHeader extends React.Component {
   render() {
@@ -219,7 +219,7 @@ class MyHeader extends React.Component {
 
 
 
-Add a form that allows users to enter their name:
+### Add a form that allows users to enter their name:
 ```
 class MyForm extends React.Component {
   render() {
@@ -237,7 +237,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-Add an event handler in the onChange attribute, and let the event handler update the state object:
+### Add an event handler in the onChange attribute, and let the event handler update the state object:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -264,7 +264,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-Display the header only if username is defined:
+### Display the header only if username is defined:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -297,7 +297,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-Add a submit button and an event handler in the onSubmit attribute:
+### Add a submit button and an event handler in the onSubmit attribute:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -331,7 +331,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-Write a form with two input fields:
+### Write a form with two input fields:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -370,7 +370,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-When you fill in your age, you will get an alert if the age field is not numeric:
+### When you fill in your age, you will get an alert if the age field is not numeric:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -414,7 +414,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-Same example, but with the validation at form submit:
+### Same example, but with the validation at form submit:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -463,7 +463,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-When you fill in your age as not numeric, an error message is dispalyed:
+### When you fill in your age as not numeric, an error message is dispalyed:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -511,7 +511,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-A simple textarea with some content initialized in the constructor:
+### A simple textarea with some content initialized in the constructor:
 ```
 class MyForm extends React.Component {
   constructor(props) {
@@ -532,7 +532,7 @@ class MyForm extends React.Component {
 ReactDOM.render(<MyForm />, document.getElementById('root'));
 ```
 
-A simple select box, where the selected value "Volvo" is initialized in the constructor:
+### A simple select box, where the selected value "Volvo" is initialized in the constructor:
 ```
 class MyForm extends React.Component {
   constructor(props) {
